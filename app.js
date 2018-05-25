@@ -13,7 +13,7 @@ var quiz = [
   ["Who are Leto's two twins?", "apollo and artemis"],
   ["Who is the god of wine?", "Dionysus"],
   ["Who is the goddess of victory?", "Nike"]
-];                                                                                                                                                                                                                                                                                                    function print(message) {
+]; 
 
 function print(message) {
   var outputDiv = document.getElementById('output');
