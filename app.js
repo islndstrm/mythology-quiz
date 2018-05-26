@@ -13,18 +13,36 @@ var quiz = [
   ["Who are Leto's two twins?", "apollo and artemis"],
   ["Who is the god of wine?", "Dionysus"],
   ["Who is the goddess of victory?", "Nike"]
-]; 
+];
 
 function print(message) {
   var outputDiv = document.getElementById('output');
   outputDiv.innerHTML = message;
 }
 
-for (let i = 0; i < quiz.length; i++) {
-    message += "<p>" + quiz[i][0] + "</p>";
-}
+//for (let i = 0; i < quiz.length; i++) {
+//    message += "<p>" + quiz[i][0] + "</p>";
+//}
 
-print(message);
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+    //Design
+		controlArrows: true,
+		verticalCentered: true,
+		sectionsColor : ['lightblue', 'orange', 'seagreen'],
+		paddingTop: '3em',
+		paddingBottom: '10px',
+		fixedElements: '#header, .footer',
+		responsiveWidth: 0,
+		responsiveHeight: 0,
+		responsiveSlides: false,
+		parallax: false,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'}
+  });
+
+});
+
+//print(message);
 
 //
 // for (var i=0; i < quiz.length; i++) {
