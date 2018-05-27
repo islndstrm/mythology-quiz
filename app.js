@@ -1,3 +1,5 @@
+// jquery plugin documentation at https://github.com/alvarotrigo/fullPage.js/#fullpagejs
+
 var counter = 0;
 var right = [];
 var wrong = [];
